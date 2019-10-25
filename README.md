@@ -117,7 +117,7 @@ You can 'deploy' and run the project on a local Flask web server that serves up 
 ```
 
 Note that once this shell script is run, you will can navigate to your [Experiment Homepage](http://localhost:5000/) and [Tensorboard](http://localhost:6006). (The links will remain inactive until the script is run.) When you do run the script, you will receive a pop-up message that asks you to accept incoming requests from the Flask web server -- like the one in this screenshot below. Be sure to accept the incoming network connection, otherwise the application will not work as it should.
-![Incoming Network Requests](server_requests.png)
+![Incoming Network Requests](server_request.png)
 
 The front-end user interface and Tensorboard should look the following when you successfully run the application for the first time:
 ![Front End User Interface](user_interface.png)
