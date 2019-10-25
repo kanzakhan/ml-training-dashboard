@@ -13,10 +13,8 @@ from multiprocessing import Process, Queue
 # relative paths within app
 PROGRESS_DB_PATH = "utils/progress.db"
 HYPER_PARAMS_PATH = "utils/default_hyper_params.json"
-TENSORBOARD_CMD = "tensorboard --logdir scratch --port 6006"
 
 tensorboard_process = None
-# executor = None
 executor = concurrent.futures.ThreadPoolExecutor(max_workers=1)
 
 # get progress written into file
@@ -81,9 +79,6 @@ def start_experiment(name,
 
     # execute call to run experiment asynchronously with the executor
     global executor
-    # if executor is None:
-        # executor = concurrent.futures.ProcessPoolExecutor(max_workers=1)
-
     from models.experiment import run_experiment
 
     # submit experiment job
@@ -97,20 +92,3 @@ def start_experiment(name,
                         hidden_size,
                         rnn_dropout,
                         embedding_dropout)
-
-def start_tensorboard():
-    # tensorboard_process will run tensorboard on its own process
-    global tensorboard_process
-    if tensorboard_process is None:
-        print('Tensorboard running at http://localhost:6006')
-        tensorboard_process = subprocess.run(TENSORBOARD_CMD.split())
-
-def kill_tensorboard(sig, frame):
-    global tensorboard_process
-    if tensorboard_process is not None:
-        print('ATTN: Terminating Tensorboard')
-        tensorboard_process.terminate()
-    print('ATTN: Terminating ASAPP Challenge Project')
-    sys.exit(0)
-
-signal.signal(signal.SIGINT, kill_tensorboard)

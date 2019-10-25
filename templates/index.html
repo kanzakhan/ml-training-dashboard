@@ -5,6 +5,7 @@
     <title>ASAPP Challenge Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/experiment-form.css">
+    <link rel="shortcut icon" href="static/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
@@ -29,6 +30,7 @@
             method="get"
             action="{{ url_for('experiment_params') }}"
         >
+            <br>
             <h2 class="ui horizontal divider header">
               <i class="bar chart icon"></i>
               Launch Training
@@ -56,22 +58,21 @@
                 </ul>
             </div>
 
-            <div class="ui green submit button" id="submit">Start</div>
-            <a href="http://localhost:6006" target="_blank" class="ui blue button">Tensorboard</a>
-            <div class="ui error message"></div>
+            <br>
             <div class="ui active progress" data-percent={{ experiment_progress }} id="progress-bar-level">
                 <div class="bar" style="transition-duration: 300ms; width:0%">
                     <div class="progress" id="progress-bar-value">{{ experiment_progress }}%</div>
                 </div>
                 <div class="label">Loading Experiment Results</div>
             </div>
+            <br>
 
             <h3 class="ui horizontal divider header">
                 <!-- <i class="tag icon"></i> -->
                 Hyper-Parameter Specifications
             </h3>
 
-
+        <div class="ui segment">
         <div class="three fields">
           <div class="field">
             <label>Experiment Name</label>
@@ -208,6 +209,13 @@
                   output0.innerHTML = this.value;
                 }
             </script>
+
+            <div class="field">
+            <div class="ui large green submit button" id="submit">Start</div>
+            <a href="http://localhost:6006" target="_blank" class="ui large blue button">Tensorboard</a>
+            </div>
+        </div>
+        <div class="ui error message"></div>
         </div>
 
       </form>

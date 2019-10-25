@@ -33,9 +33,6 @@ def run_experiment(name=DEFAULT_HYPER_PARAMS['experiment_name'],
                 ):
     # start off experiment progress at 0
     em.write_progress(0)
-    print('*********')
-    print(name)
-    print(type(name))
 
     # Dataset
     dataset = SSTDataset(transform={'text': TextField(), 'label': LabelField()})
