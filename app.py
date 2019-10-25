@@ -55,4 +55,4 @@ if __name__ == '__main__':
     # before app launches, tensorboard starts from bash script
     print('ASAPP Challenge Project running at: http://localhost:5000/')
     print('Tensorboard running at http://localhost:6006')
-    app.run(debug=True)
+    app.run()
