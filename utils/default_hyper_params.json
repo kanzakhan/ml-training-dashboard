@@ -1,0 +1,11 @@
+{
+    "experiment_name": "sst-classification",
+    "embedding_dim": 300,
+    "n_layers": 2,
+    "rnn_type": "sru",
+    "hidden_size": 128,
+    "rnn_dropout": 0.3,
+    "embedding_dropout": 0.3,
+    "max_steps": 5,
+    "iter_per_step": 5
+}

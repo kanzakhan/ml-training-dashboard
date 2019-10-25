@@ -1,0 +1,38 @@
+.slidecontainer {
+  width: 100%;
+}
+
+#progressbar-container {
+  width:50%;
+}
+.slider-color {
+  -webkit-appearance: none;
+  width: 75%;
+  height: 10px;
+  border-radius: 3px;
+  background: #d3d3d3;
+  outline: none;
+  opacity:0.7;
+  -webkit-transition: opacity .15s ease-in-out;
+  transition: opacity .15s ease-in-out;
+}
+.slider-color:hover {
+  opacity:1;
+}
+.slider-color::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2185d0;
+  cursor: pointer;
+}
+.slider-color::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #2185d0;
+  cursor: pointer;
+}
