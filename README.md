@@ -26,7 +26,7 @@ Please do the following in your terminal
 Step 1. Clone the repository for the solution to the challenge project from Github.
 
 ```
-git clone https://github.com/kanzakhan/asapp_challenge.git
+git clone https://github.com/kanzakhan/ml-training-dashboard.git
 ```
 
 Step 2. Create a new virtual environment using the environment.yml file provided in the project's root directory.
@@ -131,7 +131,7 @@ The front-end user interface and Tensorboard should look the following when you 
 
 ## Versioning
 
-For the versions available, see this project's [Github repository](https://github.com/kanzakhan/asapp_challenge).
+For the versions available, see this project's [Github repository](https://github.com/kanzakhan/ml-training-dashboard).
 
 ## Authors
 
