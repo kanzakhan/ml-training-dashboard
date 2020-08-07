@@ -1,4 +1,4 @@
-# ASAPP Challenge Project
+# Hyper-Parameter Tuning Dashboard
 
 The goal of this project was to create a full-stack web application that configures, runs, and monitors a machine learning training pipeline. The model was provided by ASAPP and created with their ML framework Flambe; some starter code to create and run an experiment was also provided.
 
@@ -108,7 +108,7 @@ Step 6. At this point you should be seeing the local webserver running in your T
 
 (Step 7: If at this point, you still get error, please try to download any remaining modules or packages that may be missing based on the errors you see in terminal output.)
 
-## Running the ASAPP Challenge Project App
+## Running the App
 
 You can 'deploy' and run the project on a local Flask web server that serves up the web application using the following command in your project directory:
 
@@ -131,7 +131,7 @@ The front-end user interface and Tensorboard should look the following when you 
 
 ## Versioning
 
-For the versions available, see the ASAPP Challenge Project's [Github repository](https://github.com/kanzakhan/asapp_challenge).
+For the versions available, see this project's [Github repository](https://github.com/kanzakhan/asapp_challenge).
 
 ## Authors
 
